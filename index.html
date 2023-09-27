@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valid Form Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
+
+</head>
+
+<body>
+    <!-- <div class="container bg-style">
+        <div class="bg-img" style="width: 100%; height: 100%;">
+            <img src="./img/sea_1.jpg" alt="">
+        </div>
+        <div class="bg-color">
+
+        </div>
+    </div> -->
+    <div class="container form-valid">
+        <h1 class="text-info text-center mt-3">Validate form project</h1>
+
+        <!--Form
+        novalidate: bootstrap không can thiệp nữa
+        -->
+        <form novalidate>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input id="email" type="text" class="form-control" placeholder="name@example.com">
+            </div>
+
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input id="name" type="text" class="form-control" placeholder="Nguyễn Văn A">
+            </div>
+
+            <!--Gender-->
+            <div class="mb-3">
+                <label for="gender" class="form-label">Gender</label>
+                <select id="gender" class="form-select">
+                    <option value="" selected>Your choice</option>
+                    <option value="1">Female</option>
+                    <option value="2">Male</option>
+                    <option value="3">Other</option>
+                </select>
+            </div>
+
+            <!--Country-->
+            <div class="mb-3">
+                <label for="country" class="form-label">Country</label>
+                <div class="form-check form-check-country">
+                    <input id="vietnam" type="radio" name="country" value="vietnam" class="form-check-input">
+                    <label for="vietnam" class="form-check-label">Viet Nam</label>
+                </div>
+                <div class="form-check form-check-country">
+                    <input id="other" type="radio" name="country" value="other" class="form-check-input">
+                    <label for="other" class="form-check-label">Other</label>
+                </div>
+            </div>
+
+            <!--Password-->
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input id="password" type="password" class="form-control">
+            </div>
+
+            <!--Confirmed Password-->
+            <div class="mb-3">
+                <label for="confirmedPassword" class="form-label">Confirm password</label>
+                <input id="confirmedPassword" type="password" class="form-control">
+            </div>
+
+            <!--agree: checkbox-->
+            <div class="mb-3 form-check">
+                <input id="agree" class="form-check-input" type="checkbox" value="true">
+                <label for="agree" class="form-check-label">I agree with rules</label>
+            </div>
+
+            <!--submit-->
+            <button class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <script src=" ./index.js"></script>
+</body>
+
+</html>
